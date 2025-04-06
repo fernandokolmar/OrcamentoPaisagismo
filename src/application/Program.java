@@ -26,13 +26,13 @@ public class Program {
             OrcamentoService orcamentoService = new OrcamentoService(produto, quantidadeProduto);
             double valorFinal = orcamentoService.calcularOrcamento();
 
+            // Exibição dos dados do cliente
+            System.out.println("\n*** DADOS DO CLIENTE ***");
+            cliente.exibirDados();
+
             // Exibição do orçamento final
             System.out.printf("\nProduto: %s\nQuantidade: %d\n", produto.getNome(), quantidadeProduto);
             System.out.printf("O orçamento final para %s é de: R$ %.2f\n", cliente.getNome(), valorFinal);
-
-            // Exibição dos dados do cliente no final
-            System.out.println("\n*** DADOS DO CLIENTE ***");
-            cliente.exibirDados();
         } catch (Exception e) {
             System.out.println("Ocorreu um erro inesperado. Por favor, tente novamente.");
         }
