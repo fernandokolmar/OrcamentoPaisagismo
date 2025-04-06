@@ -14,7 +14,6 @@ public class Program {
 
             // Cadastro do cliente
             Cliente cliente = cadastrarCliente(sc);
-            cliente.exibirDados();
 
             System.out.println("\n*** CADASTRO DE PRODUTO ***");
             // Cadastro do produto
@@ -30,6 +29,10 @@ public class Program {
             // Exibição do orçamento final
             System.out.printf("\nProduto: %s\nQuantidade: %d\n", produto.getNome(), quantidadeProduto);
             System.out.printf("O orçamento final para %s é de: R$ %.2f\n", cliente.getNome(), valorFinal);
+
+            // Exibição dos dados do cliente no final
+            System.out.println("\n*** DADOS DO CLIENTE ***");
+            cliente.exibirDados();
         } catch (Exception e) {
             System.out.println("Ocorreu um erro inesperado. Por favor, tente novamente.");
         }

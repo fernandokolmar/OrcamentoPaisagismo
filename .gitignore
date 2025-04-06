@@ -5,9 +5,11 @@ bin/
 .settings/
 .classpath
 .project
+*.class
 
 # Arquivos de log
 *.log
 
 # Diretórios de dependências
 target/
+
