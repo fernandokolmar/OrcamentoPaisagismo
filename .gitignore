@@ -1,0 +1,13 @@
+# Diretórios de build
+bin/
+
+# Arquivos do Eclipse
+.settings/
+.classpath
+.project
+
+# Arquivos de log
+*.log
+
+# Diretórios de dependências
+target/
